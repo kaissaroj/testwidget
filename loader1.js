@@ -10,7 +10,7 @@ BMWidget.prototype.init = function () {
   this.createRequest();
 };
 BMWidget.prototype.createRequest = function () {
-  const url = "https://ghcdn.rawgit.org/kaissaroj/testwidget/main/bm2.js";
+  const url = "https://ghcdn.rawgit.org/kaissaroj/testwidget/main/bm3.js";
   loadJS(url);
   // this.getRequest(function (status) {
   //   console.log("request status", status);
