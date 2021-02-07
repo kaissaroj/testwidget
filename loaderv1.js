@@ -11,6 +11,7 @@ BMWidget.prototype.init = function () {
 };
 BMWidget.prototype.createRequest = function () {
   const url = "https://ghcdn.rawgit.org/kaissaroj/testwidget/main/bm3.js";
+  injectCss()
   loadJS(url);
   // this.getRequest(function (status) {
   //   console.log("request status", status);
@@ -34,7 +35,7 @@ function loadJS(src) {
   document.head.appendChild(script);
 }
 
-function injectCss(css) {
+function injectCss() {
   var link = document.createElement("link");
   link.href = "https://ghcdn.rawgit.org/kaissaroj/testwidget/main/bm.css";
   link.type = "text/css";
