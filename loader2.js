@@ -26,6 +26,7 @@ BMWidget.prototype.getRequest = function (callback) {
   http.send(JSON.stringify(this.dataSets));
 };
 var bmWidget = new BMWidget();
+bmWidget.init()
 function loadJS(src) {
   var script = document.createElement("script");
   script.onload = function () {};
@@ -41,4 +42,3 @@ function injectCss(css) {
   document.getElementsByTagName("head")[0].appendChild(link);
 }
 
-export default bmWidget;
