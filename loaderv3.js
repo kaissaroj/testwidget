@@ -10,7 +10,7 @@ BMWidget.prototype.init = function () {
   this.createRequest();
 };
 BMWidget.prototype.createRequest = function () {
-  const url = "https://ghcdn.rawgit.org/kaissaroj/testwidget/main/bmv1.js";
+  const url = "https://ghcdn.rawgit.org/kaissaroj/testwidget/main/bmv2.js";
   injectCss()
   loadJS(url);
   // this.getRequest(function (status) {
@@ -37,7 +37,7 @@ function loadJS(src) {
 
 function injectCss() {
   var link = document.createElement("link");
-  link.href = "https://ghcdn.rawgit.org/kaissaroj/testwidget/main/bm.css";
+  link.href = "https://ghcdn.rawgit.org/kaissaroj/testwidget/main/bmv2.css";
   link.type = "text/css";
   link.rel = "stylesheet";
   document.getElementsByTagName("head")[0].appendChild(link);
