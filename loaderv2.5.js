@@ -9,7 +9,7 @@ BMWidget.prototype.init = function () {
   this.createRequest();
 };
 BMWidget.prototype.createRequest = function () {
-  const url = "https://cdn.jsdelivr.net/gh/kaissaroj/testwidget@raw/main/bmv2.4.js";
+  const url = "https://raw.githubusercontent.com/kaissaroj/testwidget/main/bmv2.4.js";
   injectCss()
   loadJS(url);
 };
