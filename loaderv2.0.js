@@ -24,7 +24,7 @@ function loadJS(src) {
 
 function injectCss() {
   var link = document.createElement("link");
-  link.href = "https://cdn.jsdelivr.net/gh/kaissaroj/testwidget@main/bmv2.css";
+  link.href = "https://cdn.jsdelivr.net/gh/kaissaroj/testwidget@main/bmv1.7.css";
   link.type = "text/css";
   link.rel = "stylesheet";
   document.getElementsByTagName("head")[0].appendChild(link);
