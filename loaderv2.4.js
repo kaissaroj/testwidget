@@ -9,7 +9,7 @@ BMWidget.prototype.init = function () {
   this.createRequest();
 };
 BMWidget.prototype.createRequest = function () {
-  const url = "https://cdn.jsdelivr.net/gh/kaissaroj/testwidget@raw/main/bmv2.2.js";
+  const url = "https://cdn.jsdelivr.net/gh/kaissaroj/testwidget@raw/main/bmv2.4.js";
   injectCss()
   loadJS(url);
 };
@@ -24,7 +24,7 @@ function loadJS(src) {
 
 function injectCss() {
   var link = document.createElement("link");
-  link.href = "https://cdn.jsdelivr.net/gh/kaissaroj/testwidget@main/bmv2.1.css";
+  link.href = "https://cdn.jsdelivr.net/gh/kaissaroj/testwidget@main/bmv2.4.css";
   link.type = "text/css";
   link.rel = "stylesheet";
   document.getElementsByTagName("head")[0].appendChild(link);
